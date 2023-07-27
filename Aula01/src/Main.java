@@ -13,14 +13,17 @@ public class Main {
         * Declaração, inicialização e utilizaão de variáveis
         * tipos de Dados
         * Operadores matemáticos
-        * Operadores compostos
+        * Operadores compostos += -= *= /= cuidado com as precedências.
+        * operadores unários ++ --
         * Operadores de comparação
-        * Operadores lógicos
-        * intrução if/else
+        * Operadores lógicos && || ! ^
+        * instrução if/else
         * instrução switch/case
         * opedador ternário
-        * operadores unitários
-        *
         */
+
+        int a = 4^(1/2);
+        int b = 5;
+
     }
 }
