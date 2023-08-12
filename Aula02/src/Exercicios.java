@@ -132,6 +132,29 @@ public class Exercicios {
 
     }
 
+    public void produtoFatorial(){
+        print("Digite um número e saiba seu produto fatorial.");
+        int input  = validateInteger(_reader.next());
+        print("O valor de " + input + "! é: " + fatorial(input) + ".");
+    }
+    private int fatorial(int value){
+        if(value == 0)
+            return 1;
+        else
+            return value * fatorial(value - 1);
+    }
+
+    public void exercicio24(){
+        int soma = 0;
+        print("Digite um número inteiro e saiba a soma dos seus algarismos.");
+        print("Digite o número:");
+        String input = Integer.toString((validateInteger(_reader.next())));
+        for(int i = 0; i < input.length(); i++){
+            soma = soma + Integer.parseInt(Character.toString(input.charAt(i)));
+        }
+        print("A soma dos algarismos do número " + input + " é: " + soma + ".");
+    }
+
     public void print(String output){
         System.out.println(output);
     }
