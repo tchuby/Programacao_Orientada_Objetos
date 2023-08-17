@@ -8,6 +8,12 @@ public class TesteService implements ITesteService {
 
     }
 
+    public TesteService(boolean falso, int numero, String nome){
+        this.falso = falso;
+        this.numero = numero;
+        this.nome = nome;
+    }
+
     public void setFalso(boolean falso){
         this.falso = falso;
     }

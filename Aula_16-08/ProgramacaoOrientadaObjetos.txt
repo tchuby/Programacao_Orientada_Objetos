@@ -1,0 +1,12 @@
+Objetivo
+______________________________________________________
+
+Diferenciar Classe de Objeto
+Declarar e inicializar Objetos
+Definir, declarar e incializar atributos
+Definir. declarar e utrilizar médoros de instância
+
+O que é Programação Orientada a Objetos?
+	
+	algoritimos que lidam com estruturas de dados 
+	com escopo e comportamentos definido

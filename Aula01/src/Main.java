@@ -1,7 +1,7 @@
 public class Main {
-    public static TesteService _service;
-    public Main(){
-        this._service = new TesteService();
+    public static ITesteService _service;
+    public Main(ITesteService testeService){
+        this._service = testeService;
     }
 
     /**
