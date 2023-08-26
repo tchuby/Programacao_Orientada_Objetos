@@ -20,6 +20,8 @@ public class AppAluno {
         print("Entre com a 3ª nota do aluno: ");
         aluno.setNota3(Double.parseDouble(_leitor.next()));
 
+        aluno.calcularMedia();
+
         print(aluno.toString());
     }
     public static void print(String message){

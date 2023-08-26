@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Product product1 = new Product("PC desktop", 2000.00);
-        Product product2 = new Product( "smartphone", 1000.00);
+        Product product1 = new Product("PC desktop", 2000.00, 0);
+        Product product2 = new Product( "smartphone", 1000.00, 0);
 
         print("O nome do produto 1 é: " + product1.getName());
         print("O preço do produto 1 é: " + product1.getPrice());

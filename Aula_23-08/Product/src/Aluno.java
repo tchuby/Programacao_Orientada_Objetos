@@ -29,21 +29,21 @@ public class Aluno {
     }
 
     public void setNota1(double nota1) {
-        if(validarNota(nota1));{
+        if(validarNota(nota1)){
             this.nota1 = nota1;
             this.nota1Atribuida = true;
         }
     }
 
     public void setNota2(double nota2) {
-        if(validarNota(nota2));{
+        if(validarNota(nota2)){
             this.nota2 = nota2;
             this.nota2Atribuida = true;
         }
     }
 
     public void setNota3(double nota3) {
-        if(validarNota(nota3));{
+        if(validarNota(nota3)){
             this.nota3 = nota3;
             this.nota3Atribuida = true;
         }
@@ -60,12 +60,11 @@ public class Aluno {
         return false;
     }
 
-    public double calcularMedia(){
+    public void calcularMedia(){
         if(!nota1Atribuida || !nota2Atribuida || !nota3Atribuida)
             System.out.println("Uma das notas não foi atribuída.");
 
         this.media = (this.nota1 + this.nota2 + this.nota3) / 3;
-        return this.media;
     }
 
     @Override
