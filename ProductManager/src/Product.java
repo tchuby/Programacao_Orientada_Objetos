@@ -1,5 +1,3 @@
-
-
 public class Product {
 
     private String name = "";
@@ -15,7 +13,7 @@ public class Product {
             this.name = name;
             return true;
         }
-        throw new Exception("Name cannot not be empty.");
+        throw new Exception("O nome não pode ser vazio.");
     }
 
     public String getName(){
@@ -28,7 +26,7 @@ public class Product {
             this.description = description;
             return true;
         }
-        throw new Exception("Description cannot not be empty.");
+        throw new Exception("Descrição não pode ser vazia.");
     }
 
     public String getDescription(){
@@ -40,7 +38,7 @@ public class Product {
             this.price = price;
             return true;
         }
-        throw new Exception("Prices cannot not be less than 0.");
+        throw new Exception("Preço não pode ser menor que 0.");
     }
 
     public Double getPrice(){
@@ -52,7 +50,7 @@ public class Product {
             this.quantity = quantity;
             return true;
         }
-        throw new Exception("Quantity cannot be less than 0.");
+        throw new Exception("Quantidade não pode ser menor que 0.");
     }
 
     public Integer getQuantity(){

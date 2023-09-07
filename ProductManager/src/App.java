@@ -6,7 +6,7 @@ public class App {
 
     private static Scanner _reader = new Scanner(System.in);
 
-    private final static int _elementsQuantity = 20;
+    private final static int _elementsQuantity = 3;
 
     public static void main(String[] args) throws Exception {
         interact();
@@ -21,7 +21,9 @@ public class App {
 
             do{
                 print("Entre com os dados do " + (i + 1) + "º produto.");
+
                 result = insertProductData();
+
             }while(!result);
         }
 

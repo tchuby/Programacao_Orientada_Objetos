@@ -53,7 +53,7 @@ public class Inventory {
 
         for(int i = 0; i < goods.size(); i++ ){
             if(goods.get(i).getQuantity() <= 5){
-                runnigOutTotalValue += (goods.get(1).getPrice() * goods.get(1).getQuantity());
+                runnigOutTotalValue += (goods.get(i).getPrice() * goods.get(i).getQuantity());
             }
         }
 

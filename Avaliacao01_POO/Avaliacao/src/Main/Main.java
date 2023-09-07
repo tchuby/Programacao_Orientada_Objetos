@@ -1,5 +1,3 @@
-package Main;
-
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -24,20 +22,24 @@ public class Main {
 		var quantidadeCadastrar = validarInteger(_leitor.next());
 		
 		for(int i = 0; i < quantidadeCadastrar; i++) {
-			
-				imprimir("Cadastrar produto nº" + (i+1) + " no estoque. \n");
-				imprimir("Digite o nome do produto: ");
-				nome = _leitor.nextLine();
-				imprimir("Digite a descrição do produto: ");
-				descricao = _leitor.nextLine();
-				imprimir("Digite o valor do produto: ");
-				valor = validarDouble(_leitor.next());
-				imprimir("Digite a quantidade do produto: ");
-				quantidade = validarInteger(_leitor.next());
-				
-				cleanConsole();
-				
-				cadastrarProduto(nome, descricao, valor, quantidade);	
+			while(controle){
+                imprimir("Cadastrar produto nº" + (i+1) + " no estoque. \n");
+                imprimir("Digite o nome do produto: ");
+                nome = _leitor.nextLine();
+                imprimir("Digite a descrição do produto: ");
+                descricao = _leitor.nextLine();
+                imprimir("Digite o valor do produto: ");
+                valor = validarDouble(_leitor.next());
+                imprimir("Digite a quantidade do produto: ");
+                quantidade = validarInteger(_leitor.next());
+
+                cleanConsole();
+
+                if(cadastrarProduto(nome, descricao, valor, quantidade)){
+                    controle = false;
+                }
+            }
+
 		}
 		
 		
