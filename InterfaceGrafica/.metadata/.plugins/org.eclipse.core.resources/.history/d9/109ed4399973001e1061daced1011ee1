@@ -1,0 +1,25 @@
+package br.com.unisenai.interfacegrafica;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TaskRepository {
+	
+	private static List<Task> records = new ArrayList();
+	
+	public Task findByCode(Integer code) {
+		
+		return records.stream()
+				.filter((current)-> current.getCode().equals(code))
+				.findFirst()
+				.orElse(null);
+	}
+	
+	public List<Task> findAll(){
+		return records;
+	}
+	
+	public void insert(Task task) {
+		
+	}
+}
